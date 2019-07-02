@@ -9,27 +9,9 @@
     max-width: 50%;
 } */
 .container {
-    max-width: 180%;
-    height: auto;
+
     font-family: raleway, sans-serif; 
-    display: grid;
-    grid-template-areas:
-        "free free free free free"
-        "seven seven seven seven seven"
-        "new new new new new"
-        "van van van van van"
-        "shirt shirt shirt shirt shirt"
-        "pants pants pants pants pants"
-        "lots lots lots lots lots"
-        "follow follow follow follow follow"
-        "five five five five five"
-        "service service service service service"
-        "cards cards cards cards cards"
-        ;
-    /* grid-template-columns: repeat(1, 1fr) ;  */
-    /* I TRIED TO SET TO MOVE AROUND WITH GRID. MESSED EVERTHING UP */    
-    /* grid-template-columns: repeat(10, 10%) ; 
-    grid-template-rows: repeat(100, 1%); */
+
 }
 
 /*----------------------------------------------*/
@@ -261,13 +243,13 @@
     height: 170px;
     width: 200px;
     line-height: 1.65;
-        text-align: right;
+    text-align: right;
 }
 .company li {
     text-align: left;
 }
 
-.signup {
+.sign-up {
     height: 300px;
     width: 295px;
     line-height: 1.65;
@@ -316,185 +298,4 @@ button {
     height: 35px;
     padding-right: 200px;
     width: 486px;
-}
-
-/*----------------------------------------------*/
-/*TABLET*/
-
-@media screen and (min-width: 601px) and (max-width: 800px) {
-.container {
-    display: grid;
-    grid-template-areas:
-        "free free free"
-        "seven seven seven"
-        "new new new"
-        "van van van"
-        "shirt shirt shirt"
-        "pants pants pants"
-        "lots lots lots"
-        "follow follow follow"
-        "five five five"
-        "service service"
-        "cards cards cards"
-        ;   
-         background-color: lime;    
-        
-}  
-
-body {
-    background-color: lime;
-}
-#burger {
-    height: 30px;
-    width: 30px;
-    display: block;
-}
-#cart {
-    height: 30px;
-    width: 30px;
-    display: block;
-}
-.account {
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    ;
-    justify-content: space-around;
-}
-
-.account p {
-    display: none;
-}
-.topmenu p {
-    display: none;
-}
-.pants {
-    display: none;
-}
-#blueshorts {
-    display: none;
-}
-#uglyshirt {
-    display: none;
-}
-#blackdude {
-    display: none;
-}
-#chair {
-    display: none;
-}
-#flowershirt {
-    display: none;
-}
-
-#bluetab {
-        display: block;
-    height: 200px;
-    width: 200px;
-    
-}
-#blacktab {
-        display: block;
-    height: 200px;
-    width: 200px;
-}
-#chairtab {
-        display: block;
-    height: 200px;
-    width: 200px;
-}
-
-}
-
-/*----------------------------------------------*/
-
-/*MOBILE*/
-@media screen and (max-width: 600px) {
-.container {
-    display: grid;
-    grid-template-areas:
-        "free"
-        "seven"
-        "new"
-        "van"
-        "shirt"
-        "pants"
-        "lots"
-        "follow"
-        "five"
-        "service"
-        "cards"
-        ;           
-}
-  
-body {
-    background-color: hotpink;
-}
-
-#vanlife {
-    display: none;
-}
-
-#vanlifemob {
-    display: block;
-}
-#burger {
-    height: 30px;
-    width: 30px;
-    display: block;
-}
-#cart {
-    height: 30px;
-    width: 30px;
-    display: block;
-}
-.account {
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    ;
-    justify-content: space-around;
-}
-.account p {
-    display: none;
-}
-.topmenu p {
-    display: none;
-}
-
-/* .officialshirts {
-    display: none;
-} */
-.pants {
-    display: none;
-}
-#blueshorts {
-    display: none;
-}
-#uglyshirt {
-    display: none;
-}
-#blackdude {
-    display: none;
-}
-#chair {
-    display: none;
-}
-#flowershirt {
-    display: none;
-}
-#bluetab {
-    display: block;
-    height: 200px;
-    width: auto;
-}
-#blacktab {
-        display: block;
-    height: 200px;
-    width: auto;
-}
-#chairtab {
-        display: block;
-    height: 200px;
-    width: auto;
 }
