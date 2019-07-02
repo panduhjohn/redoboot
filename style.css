@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    margin: 0;
+    /* box-sizing: border-box;  */
+}
+
+/* body {
+    max-width: 50%;
+} */
+.container {
+    max-width: 180%;
+    height: auto;
+    font-family: raleway, sans-serif; 
+    display: grid;
+    grid-template-areas:
+        "free free free free free"
+        "seven seven seven seven seven"
+        "new new new new new"
+        "van van van van van"
+        "shirt shirt shirt shirt shirt"
+        "pants pants pants pants pants"
+        "lots lots lots lots lots"
+        "follow follow follow follow follow"
+        "five five five five five"
+        "service service service service service"
+        "cards cards cards cards cards"
+        ;
+    /* grid-template-columns: repeat(1, 1fr) ;  */
+    /* I TRIED TO SET TO MOVE AROUND WITH GRID. MESSED EVERTHING UP */    
+    /* grid-template-columns: repeat(10, 10%) ; 
+    grid-template-rows: repeat(100, 1%); */
+}
+
+/*----------------------------------------------*/
+.header {
+    grid-area: free;
+    color: white;
+    background-color: black;
+    height: 40px;
+    font-family: raleway;
+    font-size: 12px;
+    letter-spacing: 0.2em;    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+/*----------------------------------------------*/
+.menu {
+    grid-area: seven;
+    /* display: flex;
+    justify-content: center; */
+}
+
+#toplogo {
+    width: 300px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    vertical-align: top;
+}
+
+.account {
+    grid-area: name;
+    /* background-color: pink; */
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.topmenu {
+    grid-area: name;
+    /* background-color: green; */
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.topmenu p {
+    margin-left: 21px;
+    margin-right: 21px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+#burger {
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+#cart {
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+/*----------------------------------------------*/
+
+
+
+
+/*----------------------------------------------*/
+.redvan {
+    display: grid;
+    grid-area: van;
+    /* background-color: orange; */
+    /* object-fit: cover; */
+    width: 100%;
+    /* background-image: url(assets/redvan.jpg);
+    background-repeat: none;
+    background-size: contain; */
+
+}
+.redvan img {
+    max-width: 100%;
+}
+#vanlife {
+    height: 1292px;
+    width: 100%;
+}
+
+#vanlifemob {
+    display: none;
+    height: 733px;
+    width: auto;
+}
+
+/* ITS A DIFFERENT IMAGE WHEN SHRUNK DOWN TO MOBILE*/
+
+/*----------------------------------------------*/
+.shirts {
+    grid-area: shirt;
+    /* background-color: aqua; */
+    height: 610px;
+    display: flex;
+    align-content: row;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    /* width: auto; */
+
+}
+
+.shirts img {
+    height: 600px;
+    width: 520px;
+
+}
+/*----------------------------------------------*/
+.pants {
+    grid-area: pants;
+    /* background-color: thistle; */
+    display: flex;
+    align-content: row;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    height: 610px;
+    /* width: auto; */
+}
+
+.pants img {
+    height: 600px;
+    width: 520px
+}
+/*----------------------------------------------*/
+.officialshirts {
+    grid-area: lots;
+}
+
+.officialshirts img {
+    height: 1292px;
+    width: 100%;
+}
+/*----------------------------------------------*/
+.follow {
+    grid-area: follow;
+    /* background-color: red; */
+
+}
+.follow p {
+    font-size: 22px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: raleway, sans-serif;
+    letter-spacing: 0.2em;    
+
+}
+/*----------------------------------------------*/
+.caro {
+    grid-area: five;
+    /* background-color: purple; */
+
+}
+.caro img {
+    height: 410px;
+    width: 330px;
+}
+#bluetab {
+    display: none;
+}
+#blacktab {
+    display: none;
+}
+#chairtab {
+    display: none;
+}
+
+
+/* .footer li {
+    text-decoration: none;
+} */
+
+/*----------------------------------------------*/
+
+
+.footer {
+    grid-area: service;
+    /* background-color: fuchsia; */
+    height: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    /* display: grid;
+    grid-template-areas:
+    "service service service"
+    ; */
+
+}
+
+.footer li {
+    list-style: none;
+    font-size: 15px;
+        text-align: left;
+}
+.service {
+    height: 170px;
+    text-align: center;
+    align-content: center;
+    line-height: 1.65;
+    margin-left: -250px;  
+ 
+}
+.service li {
+   padding-right: 150px;
+}
+
+.company {
+    height: 170px;
+    width: 200px;
+    line-height: 1.65;
+        text-align: right;
+}
+.company li {
+    text-align: left;
+}
+
+.signup {
+    height: 300px;
+    width: 295px;
+    line-height: 1.65;
+
+}
+
+input {
+    /* width: 400px; */
+    height: 44px;
+    width: 295px;
+    box-sizing: border-box;  
+    padding: 12px 14px;  
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-family: raleway, sans-serif;
+    font-size: 13px;
+    height: 43px;
+    width: 152px;
+    border: none;
+}
+
+/*----------------------------------------------*/
+
+.creditcards {
+    grid-area: cards;
+    /* background-color: gold; */
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.creditcards p {
+    font-family: raleway, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em; 
+    padding-right: 600px;
+}
+
+#cards {
+    display: flex;
+    justify-items: right;
+    height: 35px;
+    padding-right: 200px;
+    width: 486px;
+}
+
+/*----------------------------------------------*/
+/*TABLET*/
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+.container {
+    display: grid;
+    grid-template-areas:
+        "free free free"
+        "seven seven seven"
+        "new new new"
+        "van van van"
+        "shirt shirt shirt"
+        "pants pants pants"
+        "lots lots lots"
+        "follow follow follow"
+        "five five five"
+        "service service"
+        "cards cards cards"
+        ;   
+         background-color: lime;    
+        
+}  
+
+body {
+    background-color: lime;
+}
+#burger {
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+#cart {
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+.account {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    ;
+    justify-content: space-around;
+}
+
+.account p {
+    display: none;
+}
+.topmenu p {
+    display: none;
+}
+.pants {
+    display: none;
+}
+#blueshorts {
+    display: none;
+}
+#uglyshirt {
+    display: none;
+}
+#blackdude {
+    display: none;
+}
+#chair {
+    display: none;
+}
+#flowershirt {
+    display: none;
+}
+
+#bluetab {
+        display: block;
+    height: 200px;
+    width: 200px;
+    
+}
+#blacktab {
+        display: block;
+    height: 200px;
+    width: 200px;
+}
+#chairtab {
+        display: block;
+    height: 200px;
+    width: 200px;
+}
+
+}
+
+/*----------------------------------------------*/
+
+/*MOBILE*/
+@media screen and (max-width: 600px) {
+.container {
+    display: grid;
+    grid-template-areas:
+        "free"
+        "seven"
+        "new"
+        "van"
+        "shirt"
+        "pants"
+        "lots"
+        "follow"
+        "five"
+        "service"
+        "cards"
+        ;           
+}
+  
+body {
+    background-color: hotpink;
+}
+
+#vanlife {
+    display: none;
+}
+
+#vanlifemob {
+    display: block;
+}
+#burger {
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+#cart {
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+.account {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    ;
+    justify-content: space-around;
+}
+.account p {
+    display: none;
+}
+.topmenu p {
+    display: none;
+}
+
+/* .officialshirts {
+    display: none;
+} */
+.pants {
+    display: none;
+}
+#blueshorts {
+    display: none;
+}
+#uglyshirt {
+    display: none;
+}
+#blackdude {
+    display: none;
+}
+#chair {
+    display: none;
+}
+#flowershirt {
+    display: none;
+}
+#bluetab {
+    display: block;
+    height: 200px;
+    width: auto;
+}
+#blacktab {
+        display: block;
+    height: 200px;
+    width: auto;
+}
+#chairtab {
+        display: block;
+    height: 200px;
+    width: auto;
+}
